@@ -1,0 +1,53 @@
+<resources>
+
+    <!--
+        Base application theme for API 14+. This theme completely replaces
+        AppBaseTheme from BOTH res/values/styles.xml and
+        res/values-v11/styles.xml on API 14+ devices.
+    -->
+    <style name="HoloLight" parent="android:Theme.Holo.Light">
+        <item name="ic_flip_button">@drawable/ic_flip_button_holo_light</item>
+        <item name="ic_next_button">@drawable/ic_next_button_holo_light</item>
+        <item name="ic_previous_button">@drawable/ic_previous_button_holo_light</item>
+        <item name="ic_action_add_card">@drawable/ic_action_add_card_holo_light</item>
+        <item name="ic_action_add_set">@drawable/ic_action_add_set_holo_light</item>
+        <item name="ic_action_delete">@drawable/ic_action_delete_holo_light</item>
+        <item name="ic_action_search">@drawable/ic_action_search_holo_light</item>
+        <item name="ic_action_edit">@drawable/ic_action_edit_holo_light</item>
+        <item name="ic_action_share">@drawable/ic_action_share_holo_light</item>
+        <item name="ic_action_save">@drawable/ic_action_save_holo_light</item>
+        <item name="ic_bg">@drawable/ic_bg_holo_light</item>
+        <!-- API 14 theme customizations can go here. -->
+        
+    </style>
+
+    <style name="HoloLightDarkActionBar" parent="android:Theme.Holo.Light.DarkActionBar">
+        <item name="ic_flip_button">@drawable/ic_flip_button_holo_light</item>
+        <item name="ic_next_button">@drawable/ic_next_button_holo_light</item>
+        <item name="ic_previous_button">@drawable/ic_previous_button_holo_light</item>
+        <item name="ic_action_add_card">@drawable/ic_action_add_card_holo_dark</item>
+        <item name="ic_action_add_set">@drawable/ic_action_add_set_holo_dark</item>
+        <item name="ic_action_delete">@drawable/ic_action_delete_holo_dark</item>
+        <item name="ic_action_search">@drawable/ic_action_search_holo_dark</item>
+        <item name="ic_action_edit">@drawable/ic_action_edit_holo_dark</item>
+        <item name="ic_action_share">@drawable/ic_action_share_holo_dark</item>
+        <item name="ic_action_save">@drawable/ic_action_save_holo_dark</item>
+        <item name="ic_bg">@drawable/ic_bg_holo_light</item>
+        <!-- API 14 theme customizations can go here. -->
+    </style>
+
+    <style name="HoloDark" parent="android:Theme.Holo">
+        <item name="ic_flip_button">@drawable/ic_flip_button_holo_dark</item>
+        <item name="ic_next_button">@drawable/ic_next_button_holo_dark</item>
+        <item name="ic_previous_button">@drawable/ic_previous_button_holo_dark</item>
+        <item name="ic_action_add_card">@drawable/ic_action_add_card_holo_dark</item>
+        <item name="ic_action_add_set">@drawable/ic_action_add_set_holo_dark</item>
+        <item name="ic_action_delete">@drawable/ic_action_delete_holo_dark</item>
+        <item name="ic_action_search">@drawable/ic_action_search_holo_dark</item>
+        <item name="ic_action_edit">@drawable/ic_action_edit_holo_dark</item>
+        <item name="ic_action_share">@drawable/ic_action_share_holo_dark</item>
+        <item name="ic_action_save">@drawable/ic_action_save_holo_dark</item>
+        <item name="ic_bg">@null</item>
+    </style>
+
+</resources>

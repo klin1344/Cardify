@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/ic_bg" >
+
+    <ImageButton
+        android:id="@+id/flipToBack"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:src="?attr/ic_flip_button"
+        android:text="@string/flip_card" />
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/flipToBack"
+        android:layout_marginBottom="3dp"
+         android:layout_marginTop="3dp"
+        android:src="?attr/ic_next_button"
+        android:text="@string/next_card" />
+
+    <ImageButton
+        android:id="@+id/previousButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_toLeftOf="@id/flipToBack"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
+        android:src="?attr/ic_previous_button"
+        android:text="@string/previous_card" />
+    
+    <TextView
+        android:id="@+id/cardHeadline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/cardContent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/flipToBack"
+        android:layout_below="@id/cardHeadline"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/flashcard_background"
+        android:gravity="center"
+        android:textColor="@color/Black"
+        android:textSize="20sp" />
+
+</RelativeLayout>

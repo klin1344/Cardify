@@ -1,0 +1,51 @@
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_animation_speed" >
+        <EditTextPreference
+            android:defaultValue="500"
+            android:inputType="number"
+            android:key="pref_key_anim_flip_speed"
+            android:summary="@string/pref_anim_flip_speed_summ"
+            android:title="@string/pref_anim_flip_speed" />
+        <EditTextPreference
+            android:defaultValue="500"
+            android:inputType="number"
+            android:key="pref_key_anim_slide_speed"
+            android:summary="@string/pref_anim_slide_speed_summ"
+            android:title="@string/pref_anim_slide_speed" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_app_theme" >
+        <ListPreference
+            android:defaultValue="0"
+            android:entries="@array/pref_theme"
+            android:entryValues="@array/pref_theme_values"
+            android:key="pref_key_app_theme"
+            android:summary="@string/pref_app_theme_detail"
+            android:title="@string/pref_app_theme" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_about_app" >
+        <PreferenceScreen
+            android:summary="@string/app_version"
+            android:title="@string/app_name" >
+            <PreferenceCategory android:title="@string/app_developer" >
+                <PreferenceScreen
+                    android:summary="@string/klin1344_tasks"
+                    android:title="@string/klin1344" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="http://forum.xda-developers.com/member.php?u=4335833" />
+                </PreferenceScreen>
+            </PreferenceCategory>
+            <PreferenceCategory android:title="@string/app_contributor" >
+                <PreferenceScreen
+                    android:summary="@string/rohan_patel_tasks"
+                    android:title="@string/rohan_patel" >
+                    <intent
+                        android:action="android.intent.action.VIEW"
+                        android:data="http://www.youtube.com/user/aircanadat7" />
+                </PreferenceScreen>
+            </PreferenceCategory>
+        </PreferenceScreen>
+    </PreferenceCategory>
+
+</PreferenceScreen>

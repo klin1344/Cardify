@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/ic_bg" >
+
+    <EditText
+        android:id="@+id/editWord"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/word"
+        android:ems="10" />
+
+    <EditText
+        android:id="@+id/editDefinition"
+        android:layout_width="fill_parent"
+        android:layout_height="110dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/definition"
+        android:ems="10" />
+
+    <TextView
+        android:id="@+id/word"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="18dp"
+        android:text="@string/set_word"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/cancelButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignBaseline="@+id/saveButton"
+        android:layout_alignBottom="@+id/saveButton"
+        android:layout_alignParentLeft="true"
+        android:text="@string/cancel" />
+
+    <TextView
+        android:id="@+id/definition"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/editWord"
+        android:layout_marginTop="27dp"
+        android:text="@string/set_definition"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/editDefinition"
+        android:text="@string/save" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_alignTop="@+id/editWord"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/HoloBlue" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1.5dp"
+        android:layout_alignTop="@+id/editDefinition"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="3dp"
+        android:background="@color/HoloBlue" />
+
+    <View
+        android:id="@+id/cardSplit"
+        android:layout_width="1.5dp"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:background="@null" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-7178111112389944/1143873918"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/preview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/saveButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/preview"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/inputWord"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancelButton"
+        android:layout_toLeftOf="@id/cardSplit"
+        android:background="@drawable/ic_flashcard"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:textSize="16sp"
+        android:layout_above="@id/adView" />
+
+    <TextView
+        android:id="@+id/inputDefinition"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cancelButton"
+        android:layout_toRightOf="@id/cardSplit"
+        android:background="@drawable/ic_flashcard"
+        android:gravity="center"
+        android:paddingBottom="8dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="8dp"
+        android:textColor="@color/Black"
+        android:textSize="16sp"
+        android:layout_above="@id/adView" />
+
+</RelativeLayout>
